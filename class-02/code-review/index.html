@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Class 1 Lab</title>
+  <style>
+    html {
+      background-color: lightgrey;
+      background-image: url(https://cdn.geekwire.com/wp-content/uploads/2014/04/code-fellows-logo-compact-2-color.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-blend-mode: overlay
+    }
+
+    h1 {
+      text-align: center
+    }
+
+    span {
+      background-color: #64b9b1;
+      color: #212311
+    }
+
+    ul {
+      display: block;
+      list-style-type: circle;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      margin-left: 1em;
+      margin-right: 1em;
+      padding-left: 65px;
+    }
+    span {
+      background-color: black; 
+      color: #a3b590
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1><span>Class 1 Lab</span></h1>
+    <br>
+    <br>
+    <p><span style="
+      background-color: black; 
+      color: #a3b590
+      ">What is your common name?</span></p>
+    <p><span style="background-color: #9d9dfb; color: #1e0750">Where are you from?</span></p>
+    <p><span style="background-color: #6cc76c; color: #50110d">How old are you?</span></p>
+    <p><span style="background-color: #6d0101;color:#84d8b3">Do you like to play video games?</span></p>
+
+    <p id="lab1" style="padding: 50px; border: 10px white">"Output of script: hi there" </p>
+
+  </main>
+  <script>
+    questionBank = ["What is your common name?", "Where are you from?", "How old are you?", "Do you like to play video games?"];
+
+    var tmp = '';
+    function questionFunction(question, answer, tmp) {
+      tmp = prompt(question);
+      // Learned from mattberger's code https://gist.githubusercontent.com/mattburger/5e47a2972e8d999d1bc31d292c2f0831/raw/1525b7af390158eab9e31951beb9d23d8c51d312/index.html
+      if (tmp == '') {
+        while (tmp == '') {
+          tmp = prompt(question);
+        }
+      }
+      else {
+        answer.push(tmp);
+        console.log("user input: " + tmp);
+      }
+    }
+    let user_answers = [];
+    for (i = 0; i < 4; i++) {
+      questionFunction(questionBank[i], user_answers, tmp);
+    }
+
+    if (user_answers[3].toLowerCase() == 'yes') {
+      var greeting = "Hello, " + user_answers[0] + ", from " + user_answers[1] + " who is " + user_answers[2] + " years old and likes to play video games!";
+
+      alert(greeting);
+    }
+    else {
+      var greeting = "Hello, " + user_answers[0] + ", from " + user_answers[1] + " who is " + user_answers[2] + " years old and doesn't like to play video games....(or didn't respond with yes....)";
+
+      // greeting === "Hello, nicholas, from somewhere, etc"
+      alert(greeting);
+    }
+
+    document.getElementById("lab1").innerHTML = "Output of script: " + greeting;
+
+  </script>
+
+  <footer>
+    <h5>Sources
+      <ul>
+        <li>w3Schools</li>
+        <li>stackOverflow</li>
+        <li>geekwire</li>
+        <li>Code Fellows</li>
+      </ul>
+    </h5>
+    <h5>Contact info: 555-5555<br>xxxx@gmail.com</h5>
+  </footer>
+</body>
+
+</html>
