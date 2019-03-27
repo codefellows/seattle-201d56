@@ -5,6 +5,7 @@
 
 ## Today's Schedule
 - Announcements
+    - Hi! I'm Michelle, and I'm here to teach you things!
 - [Code Review](#codereview)
 - [JS Control Flow](#control)
 - [CSS Box Model](#box)
