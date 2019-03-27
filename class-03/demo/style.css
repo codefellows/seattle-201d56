@@ -1,3 +1,8 @@
 h1 {
   background-color: lightgoldenrodyellow;
+  padding: 20px;
+}
+
+footer {
+  border: 67px dotted red;
 }
