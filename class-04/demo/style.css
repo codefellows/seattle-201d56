@@ -1,0 +1,17 @@
+h1 {
+  background-color: lightcyan;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+p {
+  margin-bottom: 40px;
+}
+
+span {
+  color: purple;
+  background-color: lightseagreen;
+  height: 50px;
+  width: 150px;
+  display: inline-block;
+}
