@@ -37,7 +37,7 @@ function Cat(name, color, tailSize) {
 }
 
 // We need to create our Cat instances
-new Cat('Buddy', 'Orange and White', 'VERY large');
+new Cat('Buddy', 'Orange and White', 'VERY long');
 new Cat('Alistair (R.I.P.)', 'Orange', 'Small');
 new Cat('Trillian', 'Black/Orange', 'very small');
 new Cat('Aloysius', 'gray tabby', 'Kitten-sized');
@@ -50,30 +50,50 @@ console.table(allCats);
 
 Cat.prototype.render = function() {
   // make a tr
-  
-  // create, content, append for "Name"
-
-  // create, content, append for "Color"
-
-  // create. content, append for "Tail Size"
-
+  var trEl = document.createElement('tr');
+  // create, content, append for "Name" column
+  var tdEl = document.createElement('td');
+  tdEl.textContent = this.name;
+  trEl.appendChild(tdEl);
+  // create, content, append for "Color" column
+  tdEl = document.createElement('td');
+  tdEl.textContent = this.color;
+  trEl.appendChild(tdEl);
+  // create. content, append for "Tail Size" column
+  tdEl = document.createElement('td');
+  tdEl.textContent = this.tailSize;
+  trEl.appendChild(tdEl);
   // append the tr to the table
-
+  catTable.appendChild(trEl);
 };
 
 // We need a separate function to make the table header
 
 function makeHeaderRow() {
-
+  var trEl = document.createElement('tr');
+  var thEl = document.createElement('th');
+  thEl.textContent = 'Name';
+  trEl.appendChild(thEl);
+  var thEl = document.createElement('th');
+  thEl.textContent = 'Color';
+  trEl.appendChild(thEl);
+  var thEl = document.createElement('th');
+  thEl.textContent = 'Tail';
+  trEl.appendChild(thEl);
+  catTable.appendChild(trEl);
 }
 
 
 
 // It would be nice to have a single function that renders all of the individual cat rows
 function renderAllCats() {
-
+  for (var i = 0; i < allCats.length; i++) {
+    allCats[i].render();
+  }
 }
 
 // Now we need to call our functions: the one for the header row, and the one for generating the individual cat rows
+makeHeaderRow();
+renderAllCats();
 
 // Don't forget in the Chrome dev tools to observe the difference between the HTML shown in the Sources tab versus the Elements tab!

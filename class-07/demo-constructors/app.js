@@ -34,16 +34,35 @@ var luke = {
 // Student Constructor
 //====================
 
-// var allStudents = [];
+var allStudents = [];
 
-// function Student
+function Student(firstName, lastName, preferredName, homeTown) {
+  this.course = '201d56';
+  this.enrolled = true;
+  this.instructors = 'Sam';
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.preferredName = preferredName;
+  this.homeTown = homeTown;
+  this.codeNinja = true;
+  allStudents.push(this);
+}
 
-// Constructor = how many lines
-// Each instance = lines * 35
-// Total lines to model the entire class: 31
+Student.prototype.introduction = function () {
+  return 'Hi, my name is ' + this.firstName + ' ' + this.lastName + ', but you can call me ' + this.preferredName + '. I am from ' + this.homeTown + '.';
+};
 
-// console.table(allStudents);
+new Student('Luke', 'Chandler', 'Skywalker', 'Tatooine');
+new Student('Paula', 'Thomas', 'Paula', 'Silverdale');
+new Student('Tim', 'Busch', 'Tim', 'Seattle');
+new Student('Jen', 'Shin', 'Jen', 'Narnia');
+
+// Constructor = 15
+// Each instance = 1 * 35
+// Total lines to model the entire class: 50
+
+console.table(allStudents);
 
 //Student Prototype Property
 
-// new Student instances
+Student.prototype.employer = 'Amazon';
