@@ -1,0 +1,103 @@
+/* ENTIRE PAGE */
+
+/* * {
+  border: 1px solid red;
+} */
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+header {
+  background: #444;
+  height: 100px;
+}
+
+nav {
+  width: 960px;
+  margin: 0px auto;
+}
+
+header img {
+  float: left;
+  margin: 15px 30px 0px 0px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 45px 75px 0px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+/* MAIN */
+
+main {
+  width: 960px;
+  margin: 30px auto;
+}
+
+/* MAIN: SUB-BANNERS */
+
+main li {
+  float: left;
+  margin: 30px 30px 30px 0px;
+}
+
+main li:last-child {
+  margin-right: 0px;
+}
+
+/* MAIN: FEATURED SECTION */
+
+section img {
+  float: left;
+  margin-right: 30px;
+}
+
+section div {
+  width: calc(50% - 30px);
+  float: left;
+}
+
+section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+section p {
+  line-height: 20px;
+  font-style: italic;
+  overflow: auto;
+  height: 315px;
+  margin-bottom: 15px;
+}
+
+section button {
+  border: none;
+  padding: 10px 30px;
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 350ms;
+}
+
+button:hover {
+  background: green;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 30px;
+  clear: both;
+  background: #444;
+  height: 500px;
+}
