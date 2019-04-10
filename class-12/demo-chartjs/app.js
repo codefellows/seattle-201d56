@@ -88,7 +88,7 @@ var data = {
 };
 
 function drawChart() {
-  var ctx = document.getElementById('funky-chart').getContext('2d');
+  var ctx = document.getElementById('funky-chart');
   songChart = new Chart(ctx, {
     type: 'polarArea',
     data: data,
