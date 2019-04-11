@@ -5,6 +5,8 @@
 
 - [CSS Animations & Transforms](#css)
 
+- Demo: reinstantiation
+
 *10 minute break*
 
 - Discuss the lab assignment for today
