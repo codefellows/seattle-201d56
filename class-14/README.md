@@ -15,7 +15,7 @@
 
 ---
 
-#### The 301 entrance exam (and our final exam) will be published tomorrow (Friday) afternoon and will be due at 11:59pm on Sunday 1/27.
+#### The 301 entrance exam (and our final exam) will be published tomorrow (Friday) afternoon and will be due at 11:59pm on Sunday 4/14.
 
 - Announcements
   - Project Week is almost here!!!
