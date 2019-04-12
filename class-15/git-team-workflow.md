@@ -3,16 +3,16 @@ Git & GitHub Team Workflow
 
 ## When you start a new feature...
 * Start from an up-to-date _master_ branch   
- * `git checkout master`  
- * `git pull origin master`
- *  Create a new feature branch with `git checkout -b <branchname>`  
+  * `git checkout master`  
+  * `git pull origin master`
+  *  Create a new feature branch with `git checkout -b <branchname>`  
 * Do work on your feature branch and **add**, **commit**, and **push**   
- * `git add <file>`  
- * `git commit -m <useful message>`   
- * `git push origin <feature_branch_name>`
+  * `git add <file>`  
+  * `git commit -m <useful message>`   
+  * `git push origin <feature_branch_name>`
 * On GitHub...
- * Create a Pull Request (PR) for that branch on GitHub
- * Have someone else review the code in the PR and merge it
+  * Create a Pull Request (PR) for that branch on GitHub
+  * Have someone else review the code in the PR and merge it
 
 
 ## Time for a Merge Party!
